@@ -5,6 +5,7 @@ public class Player {
     private int playerId;
     private String playerName;
     private PlayerType playerType;
+    private List<Game> games;
     private List<Torpedo> torpedoes;
     private List<Ship> ships;
     private int points;
@@ -48,6 +49,14 @@ public class Player {
 
     public void setTorpedoes(List<Torpedo> torpedoes) {
         this.torpedoes = torpedoes;
+    }
+
+    public List<Game> getGames() {
+        return games;
+    }
+
+    public void setGames(List<Game> games) {
+        this.games = games;
     }
 
     public List<Ship> getShips() {
